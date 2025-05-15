@@ -7,10 +7,22 @@
     <title>Mingchen Li</title>
 
     <style>
+      #layout-content {
+        position: relative;
+        margin-top: 1.5em;
+      }
+
+      body {
+      }
+      @media (max-width: 600px) {
+        body {
+        }
+      }
+
       #clustrmaps-container {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        bottom: 10px;
+        right: 10px;
         width: 100%;
         max-width: 150px;
         height: 150px;
@@ -20,21 +32,12 @@
 
       @media (max-width: 600px) {
         #clustrmaps-container {
-          top: 5px;
-          left: 5px;
+          bottom: 5px;
+          right: 5px;
           max-width: 100px;
           height: 100px;
         }
       }
-
-       body {
-         padding-top: 160px;
-       }
-       @media (max-width: 600px) {
-         body {
-           padding-top: 110px;
-         }
-       }
     </style>
 
   </head>
@@ -90,18 +93,15 @@
 
       </ul>
 
-      </div>
-
       <div id="clustrmaps-container">
         <footer>
           <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=YnxFQ_saWyuj6Jqc6kkLaCCPwQTTdqNX9QvGLzfM4xo"></script>
         </footer>
       </div>
 
-      <div id="footer">
-        <div id="footer-text">© Mingchen Li</div>
-        </div>
-
+    </div> <div id="footer">
+      <div id="footer-text">© Mingchen Li</div>
+    </div>
 
   </body>
 </html>
