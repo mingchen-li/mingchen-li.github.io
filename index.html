@@ -5,6 +5,25 @@
     <link rel="shortcut icon" href="./images/deep.png">
     <link rel="stylesheet" href="./assets/jemdoc.css" type="text/css">
     <title>Mingchen Li</title>
+
+    <style>
+      #clustrmaps-container {
+        width: 100%;
+        max-width: 280px;
+        height: 280px;
+        margin: 1em auto;
+        overflow: hidden;
+      }
+
+      @media (max-width: 600px) {
+        #clustrmaps-container {
+          max-width: 200px;
+          height: 200px;
+          margin: 0.5em auto;
+        }
+      }
+    </style>
+
   </head>
 
   <body>
@@ -20,7 +39,6 @@
                 Template.
 
                 <br><br>
-                <!-- <font color="red">通知消息。</font> -->
 
               </p>
               <h3 style="padding-top:-0.32em"></h3>
@@ -37,7 +55,6 @@
         </tbody>
       </table>
 
-      <!-- Selected Publications -->
       <h2>Selected Publications</h2>
 
       <ul>
@@ -60,13 +77,16 @@
 
       </ul>
 
-      <div id="footer">
-        <div id="footer-text">© Mingchen Li</div>
       </div>
 
-      <footer>
-        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=YnxFQ_saWyuj6Jqc6kkLaCCPwQTTdqNX9QvGLzfM4xo"></script>
-      </footer>
-    </div>
+      <div id="footer">
+        <div id="footer-text">© Mingchen Li</div>
+        <div id="clustrmaps-container">
+          <footer>
+            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=YnxFQ_saWyuj6Jqc6kkLaCCPwQTTdqNX9QvGLzfM4xo"></script>
+          </footer>
+        </div>
+      </div>
+
   </body>
 </html>
